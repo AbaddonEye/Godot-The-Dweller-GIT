@@ -1,9 +1,8 @@
-[gd_scene load_steps=11 format=4 uid="uid://y4cm8ttm3f1r"]
+[gd_scene load_steps=10 format=4 uid="uid://y4cm8ttm3f1r"]
 
-[ext_resource type="Script" uid="uid://cs3r6shu6tv40" path="res://levels/main.gd" id="1_40405"]
+[ext_resource type="Script" path="res://levels/main.gd" id="1_40405"]
 [ext_resource type="PackedScene" uid="uid://bani4bneeuwft" path="res://Player/player.tscn" id="1_ynel5"]
 [ext_resource type="Texture2D" uid="uid://lfnf2px27gon" path="res://Tilesets/Sprite-0001.png" id="3_a2mci"]
-[ext_resource type="Script" uid="uid://b4ouhmrqq47xw" path="res://Player/ciaobomba.gd" id="3_kevnp"]
 [ext_resource type="Texture2D" uid="uid://bmy6b83unn5ac" path="res://Tilesets/run.png" id="5_nuexv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hf1co"]
@@ -109,7 +108,6 @@ script = ExtResource("1_40405")
 [node name="Player" parent="." instance=ExtResource("1_ynel5")]
 position = Vector2(-106, -332)
 safe_margin = 0.001
-script = ExtResource("3_kevnp")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(2, 2)
