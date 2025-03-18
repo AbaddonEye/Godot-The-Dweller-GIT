@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://dbgv1vxvbfspw"]
+
+[ext_resource type="Script" path="res://inventory/items/pickup_item.gd" id="1_201w5"]
+[ext_resource type="Resource" uid="uid://4gn13gkfbvca" path="res://inventory/items/blockk.tres" id="2_3m84t"]
+[ext_resource type="Texture2D" uid="uid://dh6g3rnlbobfc" path="res://icons/icon1.png" id="3_mhg3c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_64dq5"]
+size = Vector2(4, 4)
+
+[node name="PickupItem" type="Area2D"]
+script = ExtResource("1_201w5")
+item_data = ExtResource("2_3m84t")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2, 2)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_mhg3c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 2)
+shape = SubResource("RectangleShape2D_64dq5")
+one_way_collision_margin = 0.0

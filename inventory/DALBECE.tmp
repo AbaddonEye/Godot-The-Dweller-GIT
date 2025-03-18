@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://c13g5r5aiv6gl"
+path="res://.godot/imported/DALL·E 2025-03-17 22.01.00 - A seamless pixel art sky background in 8-bit retro style, featuring a bright, sunny sky with a deep light blue gradient and very few small white cloud.png-7d10777d5288dc6c1c04ff249381e73e.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://inventory/DALL·E 2025-03-17 22.01.00 - A seamless pixel art sky background in 8-bit retro style, featuring a bright, sunny sky with a deep light blue gradient and very few small white cloud.png"
+dest_files=["res://.godot/imported/DALL·E 2025-03-17 22.01.00 - A seamless pixel art sky background in 8-bit retro style, featuring a bright, sunny sky with a deep light blue gradient and very few small white cloud.png-7d10777d5288dc6c1c04ff249381e73e.ctex"]
+
+[params]
+
+compress/mode=0
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=false
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=1
