@@ -14,12 +14,6 @@ var current_state = State.Idle
 
 @export var inv: Inv  # Risorsa inventario collegata
 
-func _ready():
-	print("=== TILESET DEBUG ===")
-	if tilemap.tile_set == null:
-		print("❌ TileSet NON assegnato!")
-	else:
-		print("✅ TileSet trovato:", tilemap.tile_set)
 
 func _physics_process(delta):
 	player_falling(delta)
@@ -50,43 +44,4 @@ func update_animation():
 	elif current_state == State.Run:
 		animated_sprite_2d.play("run")
 
-# 🔹 Aggiunge oggetto all'inventario
-func add_item_to_inventory(item: InvItem):
-	inv.items.append(item)
-	inv_ui.update_slots()
-	print("✅ Raccolto:", item.name)
-	print("👜 Oggetti in inventario:", inv.items.size())
-
-# 🔹 Interazione per distruggere tile e droppare oggetto
-func _process(_delta):
-	if Input.is_action_just_pressed("interact"):
-		var mouse_pos = get_global_mouse_position()
-		var tile_pos = tilemap.local_to_map(mouse_pos)
-		var tile_data = tilemap.get_cell_tile_data(0, tile_pos)
-
-		print("=== DEBUG INTERACT ===")
-		print("Mouse Posizione:", mouse_pos)
-		print("TileMap Posizione:", tile_pos)
-		print("Tile Presente:", tile_data != null)
-
-		if tile_data != null:
-			_start_tile_destruction_delay(tile_pos)
-			print("💥 Avviato distruzione tile in:", tile_pos)
-
-
-
-# Timer per ritardare distruzione tile
-func _start_tile_destruction_delay(tile_pos):
-	var timer = Timer.new()
-	timer.wait_time = 1  # 1 secondo
-	timer.one_shot = true
-	timer.timeout.connect(Callable(self, "_on_tile_destruction_timeout").bind(tile_pos))
-	add_child(timer)
-	timer.start()
-
-# Quando il timer scade, distrugge tile e droppa oggetto
-func _on_tile_destruction_timeout(tile_pos):
-	tilemap.erase_cell(0, tile_pos)
-	print("💥 Tile distrutto in:", tile_pos)
-
-	var world_pos = tilemap.map_to_local(tile_pos)
+#

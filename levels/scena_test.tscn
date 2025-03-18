@@ -1,9 +1,8 @@
-[gd_scene load_steps=11 format=4 uid="uid://y4cm8ttm3f1r"]
+[gd_scene load_steps=10 format=4 uid="uid://y4cm8ttm3f1r"]
 
 [ext_resource type="Script" path="res://levels/main.gd" id="1_40405"]
 [ext_resource type="PackedScene" uid="uid://bani4bneeuwft" path="res://Player/player.tscn" id="1_ynel5"]
 [ext_resource type="Texture2D" uid="uid://lfnf2px27gon" path="res://Tilesets/Sprite-0001.png" id="3_a2mci"]
-[ext_resource type="Script" path="res://Player/porcodio.gd" id="3_ikg7l"]
 [ext_resource type="Texture2D" uid="uid://bmy6b83unn5ac" path="res://Tilesets/run.png" id="5_nuexv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hf1co"]
@@ -73,8 +72,10 @@ texture = ExtResource("3_a2mci")
 texture_region_size = Vector2i(8, 8)
 2:0/0 = 0
 2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)
+2:0/0/custom_data_0 = true
 3:0/0 = 0
 3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)
+3:0/0/custom_data_0 = true
 4:1/0 = 0
 4:0/0 = 0
 5:0/0 = 0
@@ -85,11 +86,14 @@ texture_region_size = Vector2i(8, 8)
 7:1/0 = 0
 2:1/0 = 0
 2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)
+2:1/0/custom_data_0 = true
 3:1/0 = 0
 1:0/0 = 0
 1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)
+1:0/0/custom_data_0 = true
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)
+0:0/0/custom_data_0 = true
 1:1/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mo65w"]
@@ -100,6 +104,8 @@ texture_region_size = Vector2i(8, 8)
 tile_size = Vector2i(8, 8)
 physics_layer_0/collision_layer = 1
 physics_layer_0/collision_mask = 2
+custom_data_layer_0/name = "Digable"
+custom_data_layer_0/type = 1
 sources/0 = SubResource("TileSetAtlasSource_fvujc")
 sources/1 = SubResource("TileSetAtlasSource_mo65w")
 
@@ -109,7 +115,6 @@ script = ExtResource("1_40405")
 [node name="Player" parent="." instance=ExtResource("1_ynel5")]
 position = Vector2(-106, -332)
 safe_margin = 0.001
-script = ExtResource("3_ikg7l")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(2, 2)
