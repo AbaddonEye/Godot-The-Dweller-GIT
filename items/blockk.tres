@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="InvItem" load_steps=3 format=3 uid="uid://4gn13gkfbvca"]
+
+[ext_resource type="Script" uid="uid://ngotl7nafmvx" path="res://inventory/inventory_item.gd" id="1_mf5io"]
+[ext_resource type="Texture2D" uid="uid://dh6g3rnlbobfc" path="res://icons/icon1.png" id="2_wbcch"]
+
+[resource]
+script = ExtResource("1_mf5io")
+name = "Blockk"
+texture = ExtResource("2_wbcch")

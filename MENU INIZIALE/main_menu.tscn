@@ -1,0 +1,50 @@
+[gd_scene load_steps=5 format=3 uid="uid://o7eiwgbt1ltn"]
+
+[ext_resource type="Script" uid="uid://bpt0cwau0hjob" path="res://MENU INIZIALE/main_menu.gd" id="1_ufr1k"]
+[ext_resource type="Texture2D" uid="uid://8g3rkss3kts0" path="res://levels/b2428f7b1fa9475abc63a4142d435df0.webp" id="2_7255y"]
+
+[sub_resource type="FontFile" id="FontFile_ag70e"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_p3b11"]
+font = SubResource("FontFile_ag70e")
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_ufr1k")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 248.0
+offset_top = 208.0
+offset_right = 351.0
+offset_bottom = 403.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TitleLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "THE DWELLER"
+label_settings = SubResource("LabelSettings_p3b11")
+
+[node name="StartButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "START"
+
+[node name="B2428f7b1Fa9475Abc63a4142d435Df0" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(324, 181.5)
+scale = Vector2(0.629883, 0.350586)
+texture = ExtResource("2_7255y")

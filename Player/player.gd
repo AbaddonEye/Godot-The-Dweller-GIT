@@ -73,6 +73,8 @@ func _process(_delta):
 			_start_tile_destruction_delay(tile_pos)
 			print("💥 Avviato distruzione tile in:", tile_pos)
 
+
+
 # Timer per ritardare distruzione tile
 func _start_tile_destruction_delay(tile_pos):
 	var timer = Timer.new()
@@ -88,22 +90,3 @@ func _on_tile_destruction_timeout(tile_pos):
 	print("💥 Tile distrutto in:", tile_pos)
 
 	var world_pos = tilemap.map_to_local(tile_pos)
-	spawn_pickup_item(world_pos)
-
-# 🔹 Droppa oggetto raccoglibile nella scena
-func spawn_pickup_item(world_position: Vector2):
-	var pickup_scene = preload("res://inventory/items/PickupItem.tscn")  # Modifica path se diverso
-	var pickup_instance = pickup_scene.instantiate()
-	pickup_instance.position = world_position
-
-	# Crea oggetto da raccogliere
-	var item = InvItem.new()
-	item.name = "Blocco"
-	item.texture = preload("res://icons/icon1.png")  # Modifica con texture tua
-	pickup_instance.item_data = item
-
-	get_tree().current_scene.add_child(pickup_instance)  # Aggiunge a scena
-	
-	
-	
-	

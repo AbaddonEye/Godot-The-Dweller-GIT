@@ -1,9 +1,8 @@
-[gd_resource type="Resource" script_class="Inv" load_steps=4 format=3 uid="uid://30gxqf3w0mfh"]
+[gd_resource type="Resource" script_class="Inv" load_steps=3 format=3 uid="uid://30gxqf3w0mfh"]
 
 [ext_resource type="Script" uid="uid://ngotl7nafmvx" path="res://inventory/inventory_item.gd" id="1_8vpgl"]
-[ext_resource type="Resource" uid="uid://dh36pjaige2dx" path="res://inventory/items/GEM.tres" id="2_j06uk"]
 [ext_resource type="Script" uid="uid://c8ehg1q3w1xh7" path="res://inventory/inventory.gd" id="3_45wgh"]
 
 [resource]
 script = ExtResource("3_45wgh")
-items = Array[ExtResource("1_8vpgl")]([ExtResource("2_j06uk"), ExtResource("2_j06uk"), ExtResource("2_j06uk"), ExtResource("2_j06uk"), null, null, null, null, null, null, null, null, null, null, null, null, null, null, null])
+items = Array[ExtResource("1_8vpgl")]([null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null])
