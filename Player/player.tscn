@@ -87,7 +87,7 @@ animation = &"run"
 autoplay = "idle"
 
 [node name="Inv_UI" parent="." instance=ExtResource("5_qlx6f")]
-offset_left = -135.0
-offset_top = -59.0
-offset_right = -56.0
-offset_bottom = 2.0
+offset_left = -138.0
+offset_top = -90.0
+offset_right = -19.0
+offset_bottom = -20.0
