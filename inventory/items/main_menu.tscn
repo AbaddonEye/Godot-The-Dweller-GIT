@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://o7eiwgbt1ltn"]
 
-[ext_resource type="Script" path="res://inventory/items/main_menu.gd" id="1_ufr1k"]
+[ext_resource type="Script" uid="uid://cljl8wj24rwse" path="res://inventory/items/main_menu.gd" id="1_ufr1k"]
 [ext_resource type="Texture2D" uid="uid://8g3rkss3kts0" path="res://levels/b2428f7b1fa9475abc63a4142d435df0.webp" id="2_7255y"]
 
 [sub_resource type="FontFile" id="FontFile_ag70e"]
